@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project Website</title>
+    <!-- This is Eric Meyer CSS reset -->
+    <link rel="stylesheet" href="reset.css">
+    <!-- This is Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+       <!-- This is Material Icon -->
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- This is my own stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+
+    <header>
+            <div class="logo">
+                <a href="aboutme.html">
+                        <img src="website_image/logo for website.png"  width ="60%"; alt="Logo for my website">
+                </a>
+            </div>
+
+        <nav>
+                    <!-- (.navbutton>a)*3 -->
+                    <div class="navbutton">
+                        <a class="nav_works" href="works.html">Works</a>
+                            <div class="dropdown">
+                                <div class="navbutton">
+                                    <a href="works.html">Work 1</a>
+                                </div>
+                                <div class="navbutton">
+                                    <a href="works.html">Work 2</a>
+                                </div>
+                                <div class="navbutton">
+                                    <a href="works.html">Work 3</a>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="navbutton">
+                        <a href="aboutme.html">About Me</a>
+                    </div>
+                    
+            </nav>
+            
+            <div class="mob-wrapper">
+                <div class="burgermenu">
+                    <span class="material-icons">
+                        menu
+                        </span>
+                </div>
+
+                <div class="mob-nav">
+                    <a href="works.html" class="navbutton">Works</a>
+                    <a href="aboutme.html" class="navbutton">About me</a>
+                </div>
+
+            </div>
+
+    </header>
+
+    <main>
+        <div class="desktop-show">
+            <div class="intro">
+                <div class="intro_words">
+                    <p>哈囉！大家好～ </p>
+                    <h1>關於黃曉嵐的一切...</h1>
+                        <a class="school" href="https://dcat.nycu.edu.tw">@ NYCU_DCAT</a>
+                        <a href="works.html" class="mybutton">Explore Ｍy Works!</a>
+                        <button class="web-button" id="toggleButton">Website intro</button>
+
+                        <div class="toggle-content" id="content">
+                            <p>網站右上可以點擊查看我的作品，有做hover和dropdown <br>
+                            （每一格的都有hover），但全部是連到works那頁。 <br>
+                            在works那頁點選work1, 2, 3，會跳到那個作品的位置，<br>
+                            或是點擊首頁下方按鈕（explore...）進入work頁面(同樣有hover) 。 <br>
+                            在work那頁，手機版的作品集的按鈕有hover，每個圖片hover上去 <br>會有放大效果，影片也會自動輪播。點選後可展開或收起介紹。 <br>聯絡資訊也有連結、旋轉效果。</p>
+                        </div>
+
+                </div>
+                    <div class="intro_pic">
+                        <img src="website_image/my profile.jpg" width="643px" height="730px" alt="my profile">
+                    </div>
+            </div>
+            <div class="aboutme">
+                <h1>About me</h1>
+                <div class="text">
+                    <p>
+                        大家好！我是黃曉嵐，來自陽明交大傳科系大二的學生。<br>
+                        我的個性善良開朗，慢熟卻也喜歡聆聽，人生的每個階段都希望能突破舒適圈。<br>
+                        我的興趣廣泛，喜歡聽各種不同風格的音樂、也喜歡攝影、記錄生活、追星，<br>
+                        觀看影視作品，或是藝術展演、聽演唱會也是我的樂趣之一，<br>
+                        不僅學習到東西方各國的藝術文化與拍攝、編劇技巧，<br>
+                        也訓練自己擁有審美的眼光。<br>
+                        最近正在學習3D模型與網頁設計，
+                        希望有一天能夠成為相關人才，<br>
+                        但目前仍在找尋自己的人生最終目標中...</p>
+                </div>
+                <div class="blank">
+                </div>
+            </div>
+        </div>
+
+        <div class="mob-view">
+
+            <div class="intro_words">
+              <p>哈囉！大家好～ </p>
+              <h1>關於黃曉嵐的一切...</h1>
+          
+            </div>
+          
+            <div class="intro_pic">
+                <img src="website_image/my profile.jpg" width="643px" height="730px" alt="my profile">
+            </div>
+          
+            <a class="school" href="https://dcat.nycu.edu.tw">@ NYCU_DCAT</a>
+          
+            <div class="introdution">
+                <button class="web-button" id="toggleButton">Website intro</button>
+                <div class="toggle-content" id="content">
+                    <p>網站右上可以點擊查看我的作品，有做hover和dropdown <br>
+                    （每一格的都有hover），但全部是連到works那頁。 <br>
+                    在works那頁點選work1, 2, 3，會跳到那個作品的位置，<br>
+                    或是點擊首頁下方按鈕（explore...）進入work頁面(同樣有hover) 。 <br>
+                    在work那頁，手機版的作品集的按鈕有hover，每個圖片hover上去 <br>會有放大效果，影片也會自動輪播。點選後可展開或收起介紹。 <br>聯絡資訊也有連結、旋轉效果。</p>
+                </div>
+            </div>
+
+            <div class="aboutme">
+                <h1>About me</h1>
+          
+                <div class="text">
+                    <p>大家好！我是黃曉嵐，來自陽明交大傳科系大二的學生。<br>
+                        我的個性善良開朗，慢熟卻也喜歡聆聽，人生的每個階段都希望能突破舒適圈。<br>
+                        我的興趣廣泛，喜歡聽各種不同風格的音樂、也喜歡攝影、記錄生活、追星，<br>
+                        觀看影視作品，或是藝術展演、聽演唱會也是我的樂趣之一，<br>
+                        不僅學習到東西方各國的藝術文化與拍攝、編劇技巧，<br>
+                        也訓練自己擁有審美的眼光。<br>
+                        最近正在學習3D模型與網頁設計，
+                        希望有一天能夠成為相關人才，<br>
+                        但目前仍在找尋自己的人生最終目標中...</p>
+                </div>
+          
+                <div class="blank">
+          
+                </div>
+          
+            </div>
+
+            <a href="works.html" class="mybutton">Explore Ｍy Works!</a>
+
+          </div>
+
+
+    </main>
+
+    <footer>
+        <div class="desktop-footer">
+            <div class="contact">
+                <h1 class="contact_text">Contact info</h1>
+
+                <div class="icons">
+                    <a class="gmail" href="#">
+                        <img class="icon1" src="website_image/gmail.png" width="58px" height="48px" alt="Gmail">
+                    </a>
+                    <a class="ig" href="https://www.instagram.com/_xlbluu31/?next=%2F">
+                        <img  class="icon2" src="website_image/ ig.png" width="152px" height="58px" alt="Instagram">
+                    </a>
+                    <a class="fb" href="https://www.facebook.com/huang.maria.1230.tae">
+                        <img  class="icon3" src="website_image/fb.png" width="135px" height="31px" alt="Facebook">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mob-footer">
+            <div class="contact">
+                <h1 class="contact_text">Contact info</h1>
+                <div class="icons">
+                    <a class="gmail" href="#">
+                        <img class="icon1" src="website_image/gmail.png" width="87px" height="72px" alt="Gmail">
+                    </a>
+                    <a class="ig" href="https://www.instagram.com/_xlbluu31/?next=%2F">
+                        <img class="icon2-mob" src="website_image/ig-icon.png" width="83px" height="83px" alt="Instagram">
+                    </a>
+                    <a class="fb" href="https://www.facebook.com/huang.maria.1230.tae">
+                        <img class="icon3-mob" src="website_image/fb-icon.png" width="83px" height="83px"  alt="Facebook">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+   </div>
+
+
+
+       <!-- this will help load the webpage faster  -->
+       <script src="https://code.jquery.com/jquery-3.7.1.js"
+       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+       crossorigin="anonymous"></script>
+       <!-- must be after JQuery Link -->
+       <script src="script.js"></script>
+</body>
+</html>

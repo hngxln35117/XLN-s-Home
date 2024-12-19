@@ -1,0 +1,428 @@
+.container {
+    background-color: #f3f3f3;
+    width: 1440px;
+}
+
+.logo {
+    padding-left: 100px;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+}
+
+nav {
+    padding-right: 168px;
+}
+
+.navbutton {
+    display: inline-block;
+    border-width: 0.1px;
+    padding: 11px 40px;
+    position: relative;
+}
+
+.navbutton a{
+    font-family: "DM Mono", monospace;
+    font-weight: 500;
+    font-style: italic;
+    color: #455176;
+    font-size: 16px;
+}
+
+/* 把dropdown-box關起來 */
+.dropdown {
+    display: none;
+    position: absolute;
+    /* 讓字顯示在最前面 */
+    z-index: 99;
+    padding-top: 20px;
+    margin-left: -40px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.dropdown a {
+    color: #455176;
+}
+
+/* 把dropdown-box打開 */
+.navbutton:hover .dropdown  {
+    display: block;
+}
+
+.navbutton:hover .nav_works {
+    color: #bfbfbf;
+}
+
+.dropdown .navbutton {
+    border-bottom: #bfbfbf;
+    padding: 15px 10px;
+}
+
+.dropdown .navbutton a:hover {
+   color: #bfbfbf;
+}
+
+.intro {
+    display: flex;
+    margin-top: 73px;
+}
+
+.intro_words {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: left;
+    margin-top: 175px;
+    margin-left: 75px;
+}
+
+.school {
+    font-family: "DM Mono", monospace;
+    font-weight: 400;
+    margin-top: 160px;
+    margin-bottom: 50px;
+    font-size: 24px;
+    color: #455176;
+    transition: 500ms;
+    width: 186px;
+    height: 48px;
+}
+
+.school:hover {
+    background-color: gold;
+}
+
+.intro_words p{
+    font-weight: 500;
+    font-size: 21px;
+    color: #455176;
+}
+
+.intro_words h1{
+	font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: #455176;
+    padding-top: 15px;
+}
+
+.intro_pic {
+    flex: 1;
+}
+
+a {
+    display: flex;
+    align-items: center;
+}
+
+.mybutton {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    border: 3px solid #FFFD85;
+    border-radius: 50px;
+    width: 186px;
+    height: 48px;
+    align-items: center;
+    transition: all 1s; 
+    justify-content: center;
+}
+
+
+.mybutton:hover {
+    color: #bfbfbf;
+    border-color:#bfbfbf;
+    transform: scale(1.25); /* 放大效果 */
+  }
+
+.toggle-content {
+    display: none; 
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f3f3f3;
+    line-height: 32px;
+  }
+
+.web-button {
+    display: inline-block;
+    padding: 20px 30px;
+    margin-top: 30px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #455167;
+    color: white;
+    width: 186px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+.web-button:hover {
+    background-color: #bfbfbf;
+  }
+
+  
+.aboutme {
+    display: flex;
+    margin-top: 270px;
+    margin-bottom: 172px;
+}
+.aboutme h1 {
+    flex: 1;
+    font-family: "DM Mono", monospace;
+    font-size: 64px;
+    color: #455167;
+    text-align: right;
+    padding: 30px;
+}
+.text {
+    flex: 3;
+    color: #5B6A9A;
+    padding-left: 113px;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.blank {
+    flex: 0.8;
+}
+
+footer {
+    height: 168px;
+    background-color: #455176;
+}
+.desktop-footer {
+    display: block;
+}
+
+.contact {
+    display: flex;
+}
+
+.contact_text {
+    flex: 2;
+    font-family: "DM Mono", monospace;
+    font-size: 21px;
+    color: white;
+    padding-left: 134px;
+    padding-top: 73px;
+}
+
+.icons {
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.icon1, .icon2, .icon3 {
+    margin-left: 90px;
+}
+
+.icon1:hover, .icon2:hover, .icon3:hover {
+    transform: rotate(20deg);
+    transition: all 500ms;
+}
+
+.icon1:visited, .icon2:visited, .icon3:visited {
+    transform: rotate(-20deg);
+}
+
+.mob-wrapper {
+    display: none;
+}
+
+.mob-view {
+    display: none;
+}
+
+.mob-footer {
+    display: none;
+}
+
+/* This is mobile view */
+@media screen and (max-width: 500px) {
+
+    .logo {
+        width: 20%;
+    }
+
+    .mob-wrapper {
+        display: block;
+        padding-right: 100px;
+    }
+
+    .material-icons {
+        color: #455176;
+        font-size: 50px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .mob-nav {
+        display: none;
+        position: absolute;
+        padding-top: 10px;
+        margin-top: 20px;
+        margin-left: -215px;
+        width: 273px;
+        height: 230px;
+    }
+
+    .mob-nav a {
+        display: block;
+        font-family: "DM Mono", monospace;
+        font-weight: 500;
+        font-style: italic;
+        color: #455176;
+        font-size: 24px;
+    }
+
+    .navbutton {
+        margin-left: 0%;
+        margin: 0 auto; /* 居中 */
+        text-align: center; /* 文字居中 */
+        padding: 30px 30px; /* 調整內邊距 */
+        box-sizing: border-box; /* 包含邊框的寬度計算 */
+        background-color: #FFFea8;
+        border-radius: 15px;
+        margin-top: 5px;
+    }
+
+
+    .mob-view {
+        display: flex;
+        flex-direction: column;
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
+
+    .desktop-show {
+        display: none;
+    }
+
+    .intro_words {
+        text-align: center;
+    }
+
+    .intro_words p {
+        font-size: 35px;
+    }
+
+    .intro_pic {
+        margin-top: 70px;
+        text-align: center;
+    }
+
+    .school {
+        display: inline-block;
+        text-align: left;
+        font-size: 50px;
+        width: 372px;
+        height: 96px;
+    }
+
+    .web-button {
+        margin-top: 30px;
+        align-items: center;
+        text-align: center;
+        width: 300px;
+        height: 100px;
+        font-size: 25px;
+    }
+
+    .toggle-content {
+        font-size: 30px;
+        color: #455176;
+        line-height: 50px;
+    }
+
+    .aboutme {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    .aboutme h1 {
+        font-size: 50px;
+        font-weight: 500;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    .text {
+        font-size: 30px;
+        line-height: 50px;
+        text-align: left;
+    }
+
+    .mybutton {
+        align-items: center;
+        text-align: center;
+        margin-left: 520px;
+        margin-bottom: 100px;
+        width: 400px;
+        height: 100px;
+        font-size: 20px;
+        background-color: #FFFD85;
+    }
+
+    .mybutton:hover {
+        background-color: transparent;
+    }
+
+    .desktop-footer {
+        display: none;
+    }
+
+    .mob-footer {
+        display: flex;
+        display: block;
+        height: 300px;
+        background-color: #455176;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #455176;
+    }
+
+    .contact_text {
+        font-size: 30px;
+        padding: 0;
+        margin-top: 80px;
+    }
+
+    .icons {
+        margin-left: -130px;
+    }
+
+    .icon1, .icon2-mob, .icon3-mob {
+        padding-left: 50px;
+        padding-bottom: 50px;
+    }
+
+
+}
+
+
+
+
+
